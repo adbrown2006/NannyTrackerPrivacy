@@ -31,127 +31,293 @@ ul {
 <body>
 
 <h1>Privacy Policy</h1>
-<p><strong>Last updated: February 03, 2026</strong></p>
 
-<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+<p><strong>Last updated: February 12, 2026</strong></p>
 
-<p>We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
+<p>This Privacy Policy explains how <strong>NannyTracker</strong> (“we,” “our,” or “the Company”) collects, uses, stores, and protects your information when you use our mobile application (“Service”). It also describes your rights regarding your data and how the law protects you. By using NannyTracker, you agree to the terms described in this Privacy Policy.</p>
 
-<h2>Interpretation and Definitions</h2>
+<hr>
 
-<h3>Interpretation</h3>
-<p>The words whose initial letters are capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or plural.</p>
+<h2>1. Information We Collect</h2>
 
-<h3>Definitions</h3>
-<p>For the purposes of this Privacy Policy:</p>
+<p>We collect information to provide and improve our Service. All data is stored securely in <strong>MongoDB</strong> and transmitted over <strong>HTTPS</strong>.</p>
 
-<ul>
-<li><strong>Account</strong> means a unique account created for You to access our Service.</li>
-<li><strong>Affiliate</strong> means an entity that controls, is controlled by, or is under common control with a party.</li>
-<li><strong>Application</strong> refers to NannyTracker.</li>
-<li><strong>Company</strong> refers to NannyTracker.</li>
-<li><strong>Country</strong> refers to California, United States.</li>
-<li><strong>Device</strong> means any device that can access the Service.</li>
-<li><strong>Personal Data</strong> means information that identifies an individual.</li>
-<li><strong>Service</strong> refers to the Application.</li>
-<li><strong>Service Provider</strong> means third parties that help operate the Service.</li>
-<li><strong>Usage Data</strong> refers to automatically collected data.</li>
-<li><strong>You</strong> means the user of the Service.</li>
-</ul>
+<h3>A. User Account Data</h3>
 
-<h2>Collecting and Using Your Personal Data</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Data Type</th>
+    <th>Purpose</th>
+    <th>Storage</th>
+  </tr>
+  <tr>
+    <td>Email address</td>
+    <td>Authentication, account identification</td>
+    <td>MongoDB</td>
+  </tr>
+  <tr>
+    <td>Password (hashed)</td>
+    <td>Authentication</td>
+    <td>MongoDB (bcrypt hashed)</td>
+  </tr>
+  <tr>
+    <td>Full name</td>
+    <td>Display, identification</td>
+    <td>MongoDB</td>
+  </tr>
+  <tr>
+    <td>User role (mother/nanny)</td>
+    <td>App functionality</td>
+    <td>MongoDB</td>
+  </tr>
+  <tr>
+    <td>Account creation date</td>
+    <td>Record keeping</td>
+    <td>MongoDB</td>
+  </tr>
+  <tr>
+    <td>Invite codes</td>
+    <td>Linking nannies to families</td>
+    <td>MongoDB</td>
+  </tr>
+</table>
 
-<h3>Types of Data Collected</h3>
+<h3>B. Child Information (Sensitive)</h3>
 
-<h4>Personal Data</h4>
-<p>While using Our Service, We may collect:</p>
-<ul>
-  <li>Email address</li>
-  <li>First name and last name</li>
-  <li>User identifier (such as a unique user ID)</li>
-  <li>Records of consent, including the date and time you agreed to the Terms and Conditions and Privacy Policy</li>
-  <li>The version of the Terms and Conditions and Privacy Policy in effect at the time of your agreement</li>
-  <li>Usage Data</li>
-</ul>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Data Type</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>Child’s name</td>
+    <td>Identification</td>
+  </tr>
+  <tr>
+    <td>Child’s age</td>
+    <td>Care information</td>
+  </tr>
+  <tr>
+    <td>Allergies</td>
+    <td>Health & safety</td>
+  </tr>
+  <tr>
+    <td>Medications</td>
+    <td>Health & safety</td>
+  </tr>
+  <tr>
+    <td>Dosage instructions</td>
+    <td>Health & safety</td>
+  </tr>
+  <tr>
+    <td>Emergency notes</td>
+    <td>Safety</td>
+  </tr>
+  <tr>
+    <td>Fears/triggers</td>
+    <td>Behavioral care</td>
+  </tr>
+  <tr>
+    <td>Behavioral notes</td>
+    <td>Care guidance</td>
+  </tr>
+  <tr>
+    <td>Miscellaneous instructions</td>
+    <td>Care guidance</td>
+  </tr>
+</table>
 
-<p><strong>Usage Data</strong> is collected automatically and may include IP address, browser type, device information, and usage diagnostics.</p>
+<h3>C. Employment & Work Data</h3>
 
-<h2>Use of Your Personal Data</h2>
-<p>The Company may use Personal Data to:</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Data Type</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>Work hours logged</td>
+    <td>Time tracking, pay calculation</td>
+  </tr>
+  <tr>
+    <td>Hourly/mileage rates</td>
+    <td>Compensation</td>
+  </tr>
+  <tr>
+    <td>Mileage logs</td>
+    <td>Reimbursement tracking</td>
+  </tr>
+  <tr>
+    <td>Tasks assigned/completed</td>
+    <td>Task management</td>
+  </tr>
+  <tr>
+    <td>Schedule entries</td>
+    <td>Calendar/scheduling</td>
+  </tr>
+  <tr>
+    <td>Employment start/end dates</td>
+    <td>Record keeping</td>
+  </tr>
+</table>
+
+<h3>D. Legal Consent Records</h3>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Data Type</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>Terms acceptance timestamp</td>
+    <td>Legal compliance</td>
+  </tr>
+  <tr>
+    <td>Privacy Policy acceptance</td>
+    <td>Legal compliance</td>
+  </tr>
+  <tr>
+    <td>Acceptance method</td>
+    <td>Audit trail</td>
+  </tr>
+</table>
+
+<hr>
+
+<h2>2. How We Use Your Data</h2>
+
+<p>We may use your data to:</p>
 <ul>
   <li>Provide and maintain the Service</li>
   <li>Manage user accounts</li>
-  <li>Record, verify, and demonstrate your acceptance of our Terms and Conditions and Privacy Policy</li>
-  <li>Perform contractual obligations</li>
-  <li>Contact users regarding updates or service changes</li>
-  <li>Provide marketing or promotional content</li>
+  <li>Record and verify your acceptance of Terms and Privacy Policy</li>
+  <li>Contact you about updates or service changes</li>
   <li>Manage support requests</li>
-  <li>Conduct business transfers</li>
-  <li>Improve analytics and user experience</li>
+  <li>Improve analytics and app experience</li>
 </ul>
 
-<p>We may share Personal Data:</p>
+<p>We <strong>do not share your data with advertising, analytics, or social media platforms</strong>.</p>
 
+<hr>
+
+<h2>3. Data Sharing</h2>
+
+<p>We may share data <strong>only with the following trusted parties</strong>:</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Service</th>
+    <th>Data Shared</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>MongoDB</td>
+    <td>All app data</td>
+    <td>Database storage</td>
+  </tr>
+  <tr>
+    <td>Expo</td>
+    <td>Device info</td>
+    <td>Push notifications and app updates</td>
+  </tr>
+</table>
+
+<p>Data <strong>is never sold or shared with marketers or advertisers</strong>.</p>
+
+<hr>
+
+<h2>4. Data Retention</h2>
+
+<p>We keep your data only as long as necessary:</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th>Data Type</th>
+    <th>Retention Period</th>
+  </tr>
+  <tr>
+    <td>Account information</td>
+    <td>Active + 24 months after closure</td>
+  </tr>
+  <tr>
+    <td>Employment & work data</td>
+    <td>Up to 24 months</td>
+  </tr>
+  <tr>
+    <td>Child information</td>
+    <td>Up to 24 months</td>
+  </tr>
+  <tr>
+    <td>Legal consent records</td>
+    <td>Up to 24 months</td>
+  </tr>
+</table>
+
+<p>Data may be retained longer if required by law, security, or dispute resolution.</p>
+
+<hr>
+
+<h2>5. Your Rights</h2>
 <ul>
-<li>With Service Providers</li>
-<li>During business transfers</li>
-<li>With Affiliates</li>
-<li>With business partners</li>
-<li>With other users in public areas</li>
-<li>With Your consent</li>
+  <li><strong>Delete Data:</strong> You can request deletion via account settings or by contacting <strong>nannytrackerhelp@gmail.com</strong>.</li>
+  <li><strong>Data Access:</strong> You can review your account and child information in the app.</li>
 </ul>
 
-<h3>Retention of Your Personal Data</h3>
+<hr>
 
-<p>We retain Personal Data only as long as necessary to fulfill legal and operational purposes.</p>
+<h2>6. Security</h2>
+<p>We implement <strong>reasonable technical and organizational measures</strong> to protect your data, including encrypted transmission over <strong>HTTPS</strong>. However, no system can guarantee absolute security.</p>
 
-<ul>
-<li><strong>Account Information:</strong> retained during account activity plus up to 24 months after closure.</li>
-<li><strong>Support Data:</strong> retained up to 24 months.</li>
-<li><strong>Usage Data:</strong> retained up to 24 months.</li>
-</ul>
+<hr>
 
-<p>Data may be retained longer for legal compliance, dispute resolution, or security purposes.</p>
+<h2>7. Children’s Privacy</h2>
+<p>NannyTracker is <strong>not designed for children under 13</strong>. We do not knowingly collect data from children. Any accidental collection will be deleted promptly.</p>
 
-<h3>Transfer of Your Personal Data</h3>
-<p>Your information may be processed demonstrate where servers or service providers are located. We implement safeguards to protect data during transfers.</p>
+<hr>
 
-<h3>Delete Your Personal Data</h3>
-<p>You may request deletion of your Personal Data by contacting us or managing your account settings.</p>
+<h2>8. Links to Other Websites</h2>
+<p>Our Service may link to third-party websites. We are <strong>not responsible for the privacy practices</strong> of other websites.</p>
 
-<h3>Disclosure of Your Personal Data</h3>
+<hr>
 
-<h4>Business Transactions</h4>
-<p>Personal Data may be transferred during company restructuring or sale.</p>
+<h2>9. Changes to This Policy</h2>
+<p>We may update this Privacy Policy occasionally. The <strong>“Last updated”</strong> date will reflect the most recent update.</p>
 
-<h4>Law Enforcement</h4>
-<p>We may disclose Personal Data if legally required.</p>
+<hr>
 
-<h4>Other Legal Requirements</h4>
-<ul>
-<li>Comply with law</li>
-<li>Protect company rights</li>
-<li>Prevent wrongdoing</li>
-<li>Protect user safety</li>
-<li>Protect against legal liability</li>
-</ul>
-
-<h3>Security of Your Personal Data</h3>
-<p>We use reasonable security measures but cannot guarantee absolute security.</p>
-
-<h2>Children's Privacy</h2>
-<p>Our Service does not knowingly collect data from children under 13. If discovered, we will remove such data promptly.</p>
-
-<h2>Links to Other Websites</h2>
-<p>We are not responsible for third-party website privacy practices.</p>
-
-<h2>Changes to this Privacy Policy</h2>
-<p>We may update this policy and will update the "Last updated" date when changes occur.</p>
-
-<h2>Contact Us</h2>
-<p>If you have questions, contact:</p>
-
+<h2>10. Contact Us</h2>
+<p>If you have questions about this Privacy Policy or your data:</p>
 <p><strong>Email:</strong> nannytrackerhelp@gmail.com</p>
+
+<hr>
+
+<h2>App Store & Google Play Privacy Compliance Summary</h2>
+
+<p><strong>Apple App Store Privacy Labels:</strong></p>
+<ul>
+  <li><strong>Contact Info:</strong> Email, Name</li>
+  <li><strong>Health & Fitness:</strong> Child medical info (allergies, medications)</li>
+  <li><strong>User Content:</strong> Schedule, tasks, notes</li>
+  <li><strong>Identifiers:</strong> User ID</li>
+</ul>
+
+<p><strong>Google Play Data Safety:</strong></p>
+<ul>
+  <li><strong>Personal info collected:</strong> Name, email</li>
+  <li><strong>App activity:</strong> In-app actions (hours, tasks, mileage)</li>
+  <li><strong>Data encrypted in transit:</strong> Yes</li>
+  <li><strong>Data can be deleted:</strong> Yes (via account deletion)</li>
+</ul>
+
+<p><strong>What we DO NOT collect:</strong></p>
+<ul>
+  <li>Analytics (no Google Analytics, Mixpanel, Amplitude, etc.)</li>
+  <li>Crash reporting (no Sentry, Crashlytics, Bugsnag)</li>
+  <li>Third-party authentication (no Google/Facebook/Apple sign-in)</li>
+  <li>Location (GPS not used)</li>
+  <li>Device identifiers (no IDFA/GAID collection)</li>
+  <li>Advertising or social media integration</li>
+</ul>
+
 
 </body>
 </html>
